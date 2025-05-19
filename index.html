@@ -1,44 +1,44 @@
 diff --git a/index.html b/index.html
-index 5da00a6..76a268d 100644
+index 97495bf..e5b179c 100644
 --- a/index.html
 +++ b/index.html
-@@ -1,10 +1,35 @@
+@@ -1,30 +1,37 @@
  <!DOCTYPE html>
--<html>
-+<html lang="en">
+ <html lang="en">
  <head>
--  <title>AJ's Website</title>
-+  <meta charset="UTF-8">
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-+  <title>AJ's Personal Brand</title>
-+  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AJ's Personal Brand</title>
+   <link rel="stylesheet" href="style.css">
  </head>
  <body>
--  <h1>Welcome to ajarmour10.github.io!</h1>
--  <p>This is your live GitHub Pages site.</p>
-+  <header class="hero">
-+    <h1>AJ Armour</h1>
-+    <p class="tagline">Creator &bull; Designer &bull; Adventurer</p>
-+  </header>
++  <nav class="nav-bar">
++    <ul>
++      <li><a href="#">Blog</a></li>
++      <li><a href="#">Shop</a></li>
++      <li><a href="#about">About</a></li>
++    </ul>
++  </nav>
 +
-+  <section class="about">
-+    <h2>About Me</h2>
-+    <p>Hey there! I’m AJ – a creator who loves designing and bringing ideas to life. My latest obsession has me offroading and building projects in my garage. Wherever the world takes me, I’m always tinkering.</p>
-+    <p>Follow along for blogs, how-to’s, interesting designs, new products and more.</p>
-+  </section>
-+
-+  <section class="cta">
-+    <h2>Join My Newsletter</h2>
-+    <p>Get updates on new posts, designs, and adventures.</p>
-+    <form class="signup" action="#" method="post">
-+      <label for="email" class="visually-hidden">Email address</label>
-+      <input id="email" type="email" name="email" placeholder="you@example.com" required>
-+      <button class="button" type="submit">Sign Up</button>
-+    </form>
-+  </section>
-+
-+  <footer>
-+    <p>&copy; 2023 AJ Armour</p>
-+  </footer>
+   <header class="hero">
+     <h1>AJ Armour</h1>
+     <p class="tagline">Developer &bull; Designer &bull; Creator</p>
+   </header>
+ 
+-  <section class="about">
++  <section class="about" id="about">
+     <h2>About Me</h2>
+     <p>Hello! I'm AJ, a passionate developer and designer. I build web experiences that are fast, accessible, and user-friendly.</p>
+   </section>
+-
+   <section class="cta">
+     <h2>Let's Connect</h2>
+     <p>Follow my work or reach out if you'd like to collaborate.</p>
+     <a class="button" href="mailto:aj@example.com">Email Me</a>
+   </section>
+ 
+   <footer>
+     <p>&copy; 2023 AJ Armour</p>
+   </footer>
  </body>
  </html>
