@@ -54,6 +54,14 @@ header.hero {
   padding: 5rem 1rem;
 }
 
+.hero-art {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 200px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
 .tagline {
   margin-top: 0.5rem;
   font-size: 1.25rem;
