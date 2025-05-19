@@ -11,6 +11,27 @@ body {
   color: #333;
 }
 
+nav.nav-bar {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav.nav-bar li {
+  margin: 0 1rem;
+}
+
+nav.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header.hero {
   background: #007acc;
   color: #fff;
