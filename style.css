@@ -1,55 +1,100 @@
-/* Basic reset */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+:root {
+  --primary-color: #ff5c5c;
+  --secondary-color: #2bd2ff;
+  --bg-color: #fafafa;
+  --text-color: #333;
 }
 
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+/* Navigation */
 nav.nav-bar {
-  background: #333;
-  color: #fff;
+  background: #fff;
+  border-bottom: 1px solid #eee;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 nav.nav-bar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-}
-
-nav.nav-bar li {
-  margin: 0 1rem;
+  gap: 1rem;
 }
 
 nav.nav-bar a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
+  font-weight: 500;
 }
 
+/* Hero section */
 header.hero {
-  background: #007acc;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: #fff;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .tagline {
   margin-top: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
+/* General section layout */
 section {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   max-width: 800px;
   margin: auto;
 }
 
+/* Newsletter */
+section.newsletter {
+  text-align: center;
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* CTA */
 section.cta {
   text-align: center;
   background: #f0f0f0;
@@ -60,11 +105,12 @@ section.cta {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   color: #fff;
-  background: #007acc;
+  background: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
