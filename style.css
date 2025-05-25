@@ -59,8 +59,8 @@ nav.nav-bar a {
 header.hero {
   background-image: url('ff52b204-e1cd-4f7b-933f-5c35dce04c8c.png');
   background-size: cover;
-  background-position: center;
-  height: 60vh;
+  background-position: center 60%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,7 +182,8 @@ img {
 /* Adjust hero height on small screens */
 @media (max-width: 600px) {
   header.hero {
-    height: 40vh;
+    height: 25
+      ;background-position: center 60%;
   }
 }
 }
