@@ -162,4 +162,27 @@ footer {
   header.hero {
     padding: 6rem 1rem;
   }
+
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure product & blog images fill their cards without distortion */
+.product img,
+.blog-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Adjust hero height on small screens */
+@media (max-width: 600px) {
+  header.hero {
+    height: 40vh;
+  }
+}
 }
