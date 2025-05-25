@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
-  background-image: url('topography.svg');
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGcgc3Ryb2tlPSIjZTBlMGUwIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0wIDIwIEMgMjAgMTAsIDQwIDEwLCA1MCAyMCBDIDYwIDMwLCA4MCAzMCwgMTAwIDIwIiAvPjxwYXRoIGQ9Ik0wIDQwIEMgMjAgMzAsIDQwIDMwLCA1MCA0MCBDIDYwIDUwLCA4MCA1MCwgMTAwIDQwIiAvPjxwYXRoIGQ9Ik0wIDYwIEMgMjAgNTAsIDQwIDUwLCA1MCA2MCBDIDYwIDcwLCA4MCA3MCwgMTAwIDYwIiAvPjxwYXRoIGQ9Ik0wIDgwIEMgMjAgNzAsIDQwIDcwLCA1MCA4MCBDIDYwIDkwLCA4MCA5MCwgMTAwIDgwIiAvPjwvZz48L3N2Zz4=");
   background-repeat: repeat;
   background-size: 300px;
 }
@@ -75,10 +75,15 @@ section {
 }
 
 /* About section */
-.about-content {
+.about-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: block;
 }
 
 .profile-pic {
@@ -90,15 +95,22 @@ section {
 }
 
 .social-links {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   display: flex;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .social-links a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
+}
+
+.icon {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 /* Newsletter */
