@@ -199,35 +199,51 @@ video {
 
 /* Sections under hero */
 .section-showcase {
-  position: relative;
-  height: 100vh;
-  display: flex;
+    display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+
 }
 
 .section-showcase h2 {
-  position: absolute;
-  font-size: clamp(2rem, 6vw, 4rem);
-  color: var(--primary-color);
-  z-index: 2;
+    font-size: clamp(2rem, 6vw, 4rem);
+  margin: 0;
+
 }
 
 .section-showcase .showcase-img {
-  width: 60vmin;
-  height: 60vmin;
-  image-rendering: pixelated;
+    flex: 0 0 40vmin;
+  width: 40vmin;
+  height: 40vmin;
+  image
+    -rendering: pixelated;
   transform-origin: center center;
+nter;
 }
+  .section-showcase:nth-of-type(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.section-showcase:nth-of-type(even) {
+  flex-direction: row;
+  text-align: left;
+}
+
   .tire-track {
-  position: absolute;
+    position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  opacity: 0.4;
+  background-image: url('../assets/tire_tread.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  opacity: 0.6;
+
 }
 
 
