@@ -50,24 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     );
   });
-
   // Decorative tire tracks
-  const trackSVG =
-    '<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">' +
-    '<path d="M0 0 Q50 100 100 0 T200 0 T300 0 T400 0" stroke="#444" stroke-width="4" fill="none" stroke-dasharray="10 10" />' +
-    '</svg>';
-
-  sections.forEach((section, idx) => {
+  sections.forEach((section) => {
     const track = document.createElement('div');
     track.classList.add('tire-track');
-    track.innerHTML = trackSVG;
     section.appendChild(track);
 
     gsap.fromTo(
       track,
       { opacity: 0, y: 50 },
       {
-        opacity: 0.5,
+        opacity: 0.6,
         y: 0,
         ease: 'none',
         scrollTrigger: {
