@@ -163,6 +163,64 @@ footer {
   header.hero {
     padding: 6rem 1rem;
   }
+/* Responsive hero image adjustments */
+.hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 40vh;
+    min-height: 260px;
+  }
+}
+
+/* Ensure all images scale without cropping */
+img,
+picture,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections under hero */
+.section-showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section-showcase h2 {
+  position: absolute;
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: var(--primary-color);
+  z-index: 2;
+}
+
+.section-showcase .showcase-img {
+  width: 60vmin;
+  height: 60vmin;
+  image-rendering: pixelated;
+  transform-origin: center center;
+}
+
 
 
 /* Responsive images */
