@@ -7,6 +7,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark-charcoal': '#1C1C1E',
+            'neon-teal': '#00F0FF',
+            'sunset-orange': '#FF784F',
+            'console-gray': '#8B8B9E',
+            'off-white': '#F4F4F6',
+          },
+          fontFamily: {
+            heading: ['"Press Start 2P"', 'monospace'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+>
+  </script>
+    <style>
+  .btn-pixel {
+    display:inline-block;
+    border:2px solid #F4F4F6;
+    box-shadow:4px 4px 0 0 #1C1C1E;
+    transition:transform 0.1s, box-shadow 0.1s;
+  }
+  .btn-pixel:hover {
+    transform:translate(2px,2px);
+    box-shadow:2px 2px 0 0 #1C1C1E;
+  }
+</style>
+>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <nav class="nav-bar">
@@ -18,12 +53,29 @@
     </ul>
   </nav>
 
-  <header class="hero">
-    <h1>AJ Armour</h1>
-    <p class="tagline">Creator &bull; Designer &bull; Adventurer</p>
-  </header>
+  <header class="bg-[url('/assets/svg/bg-stars.svg')] bg-repeat text-off-white py-24 text-center">
+  <h1 class="text-4xl md:text-5xl font-heading mb-4">Level‑Up Tech, Trails &amp; Tools</h1>
+  <p class="max-w-xl mx-auto text-console-gray mb-8">Follow AJ as he hacks hardware, builds rigs &amp; explores the great outdoors.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="/blog/" class="btn-pixel bg-neon-teal text-dark-charcoal px-6 py-3">Latest Blog</a>
+    <a href="/store/" class="btn-pixel bg-sunset-orange text-dark-charcoal px-6 py-3">Featured Store</a>
+    <a href="/about/" class="btn-pixel bg-console-gray text-dark-charcoal px-6 py-3">About AJ</a>
+  </div>
+</header>/header>
 
-  <<section class="about" id="about">
+  <<section class="bg-dark-charcoal text-off-white py-8">
+  <div class="max-w-xl mx-auto text-center">
+    <h2 class="font-heading text-2xl mb-4">Join the Level‑Up Newsletter</h2>
+    <form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col sm:flex-row gap-3 justify-center">
+      <input type="hidden" name="form-name" value="newsletter">
+      <input type="text" name="bot-field" class="hidden" aria-hidden="true">
+      <input type="email" name="email" required placeholder="you@example.com" class="px-4 py-2 rounded text-dark-charcoal flex-1">
+      <button type="submit" class="btn-pixel bg-neon-teal text-dark-charcoal px-6 py-2">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+    <section class="about" id="about">
     <div class="about-header">
       <img src="profile-placeholder.svg" alt="AJ Armour" class="profile-pic">
       <h2>About Me</h2>
