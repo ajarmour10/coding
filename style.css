@@ -272,3 +272,31 @@ img {
   }
 }
 }
+
+
+/* ---------------------------------------------------
+   Responsive layout improvements
+   ---------------------------------------------------*/
+@media (max-width: 900px) {
+  /* Stack showcase sections vertically on small screens */
+  .section-showcase {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-showcase .showcase-img {
+    width: 60vw;
+    height: 60vw;
+    margin: 0 auto 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Smoother transitions for showcase images */
+.section-showcase .showcase-img {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease-out;
+}
