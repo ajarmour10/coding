@@ -19,19 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Image scale / fade
     gsap.fromTo(
       img,
-      { scale: 0.6, opacity: 0 },
-      {
-        scale: 1,
-        opacity: 1,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 80%',
-          end: 'bottom top',
-          scrub: true,
-        },
-      }
-    );
+      { scale: 0.85, opacity: 0, y: 40 },
+{
+  scale: 1,
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: 'power3.out',
+  scrollTrigger: {
+    trigger: section,
+    start: 'top 80%',
+    toggleActions: 'play none none reverse',
+  },
+  }
+});
 
     // Heading slide up
     gsap.fromTo(
